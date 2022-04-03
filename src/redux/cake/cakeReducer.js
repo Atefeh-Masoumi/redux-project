@@ -6,9 +6,9 @@ const initialState={
 const  cakeReucer = (state=initialState, action) => {
   switch (action.type){
       case BUY_CAKE: 
-        return {...state, numOfCake:state.numOfCake - 1};
-        default:
-            return state;
+        return {...state, numOfCake:state.numOfCake - action.payload};
+    default:
+        return state;
 
 
 

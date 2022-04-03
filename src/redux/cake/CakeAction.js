@@ -1,9 +1,10 @@
 import {BUY_CAKE} from './CakeType'
 
-function CakeAction  () {
+function buyCake (numbers=1) {
     return {
         type:"BUY_CAKE",
+        payload:numbers,
     };
 }
  
-export default CakeAction;
+export default buyCake;
