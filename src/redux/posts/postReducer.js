@@ -17,7 +17,7 @@ const initialState = {
             case FETCH_POSTS_FAILURE:
                     return{loading:false, error:action.payload,post:[]};
             case FETCH_POSTS_SUCCESS:
-                return{loading:false, error:"",post:action.payload};
+                return{...state,loading:false, error:"",post:action.payload};
             default:
                 return state;
         }

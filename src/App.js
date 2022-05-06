@@ -6,7 +6,7 @@ import HookCakeContainer from './component/HookCakeContainer';
 import HookIcecreamContainer from './component/IcecreamContainer';
 import UserConntainer from './component/UserContainer';
 import store from './redux/store';
-
+import PostSaga from './component/postSaga/postSaga'
 function App() {
   return (
     <Provider store={store}>
@@ -16,6 +16,7 @@ function App() {
         <HookIcecreamContainer/>
         <CakeWithPayload/>
         <UserConntainer/>
+        <PostSaga/>
 
       </div>
 

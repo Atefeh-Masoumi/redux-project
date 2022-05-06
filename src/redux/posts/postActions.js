@@ -7,6 +7,7 @@ import {
 export const fetchPostRequest =(id)=>{
     return {
         type:FETCH_POSTS_REQUEST,
+        payload:id,
     };
 
 };
